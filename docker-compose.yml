@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  is-server-alive:
+    build: .
+    environment:
+      DC_CHANNEL_ID: ""
+      DC_TOKEN: ""
+    restart: unless-stopped
